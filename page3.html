@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./ico-128.png" type="image/png">
+    <title>Document electron test
+    </title>
+    <style>
+      div.section1{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: blanchedalmond;
+        height: 100%;
+      }
+      img.img1{
+        width: 1200px;
+      }
+      span.text1{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 85px;
+      }
+    </style>
+    <link rel="stylesheet" href="./dist/fullpage.min.css">
+    <script src="./dist/fullpage.min.js">
+    </script>
+  </head>
+  <body>
+    <div id="main">
+      <div class="section" id="section0" data-anchor="page0">
+        <div class="slide dx-test">
+          <div class="section1" style="background-color:rgb(255, 231, 194)">
+            <span class="text1">1-1(1)
+            </span>
+            <img src="./img/origami_fon_pc_1.png" alt="origami_fon_pc_1.png" class="img1">
+          </div>
+        </div>
+        <div class="slide">
+          <div class="section1" style="background-color:rgb(255, 231, 154)">
+            <span class="text1">1-2(2)
+            </span>
+            <img src="./img/origami_fon_pc_2.png" alt="origami_fon_pc_2.png" class="img1">
+          </div>
+        </div>
+      </div>
+      <div class="section active" id="section1" data-anchor="page1">
+        <div class="section1" style="background-color:rgb(235, 231, 194)">
+          <span class="text1">2(3)
+          </span>
+          <img src="./img/origami_fon_pc_3.png" alt="origami_fon_pc_3.png" class="img1">
+        </div>
+      </div>
+      <div class="section inactive" id="section2" data-anchor="page2">
+        <div class="slide">
+            <div class="section1" style="background-color:rgb(215, 231, 194)">
+              <span class="text1">3-1(4)
+              </span>
+              <img src="./img/origami_fon_pc_4.png" alt="origami_fon_pc_4.png" class="img1">
+            </div>
+        </div>
+        <div class="slide active">
+            <div class="section1" style="background-color:rgb(215, 231, 154)">
+              <span class="text1">3-2(5)
+              </span>
+              <img src="./img/origami_fon_pc_5.png" alt="origami_fon_pc_5.png" class="img1">
+            </div>
+        </div>
+        <div class="slide">
+            <div class="section1" style="background-color:rgb(215, 231, 114)">
+              <span class="text1">3-3(7)
+              </span>
+              <img src="./img/origami_fon_pc_7.png" alt="origami_fon_pc_7.png" class="img1">
+            </div>
+        </div>
+      </div>
+      <div class="section" id="section3" data-anchor="page3">
+        <div class="section1" style="background-color:rgb(195, 231, 194)">
+          <span class="text1">4(13)
+          </span>
+          <img src="./img/origami_fon_pc_13.png" alt="origami_fon_pc_13.png" class="img1">
+        </div>
+      </div>
+    </div>
+    <script>
+      var fullPage=new fullpage(
+        "#main",
+        {
+            //scrollBar: true,
+            anchors:["page0","page1","page2","page3"]
+        }
+        )
+        //alert(window.innerWidth+"x"+window.innerHeight)
+    </script>
+  </body>
+</html> 
